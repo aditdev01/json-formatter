@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b0f">
+  <meta name="description" content="Free browser-based JSON formatter, validator and minifier. Format, validate, edit and download JSON privately in your browser.">
+  <meta name="keywords" content="JSON formatter, JSON validator, JSON minifier, developer tools">
+  <title>JSON Formatter — Format, Validate & Minify</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2310141a'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-size='28' font-family='monospace' fill='%23a6afff'%3E%7B%7D%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="DevTools home">
+        <span class="logo-mark">{ }</span><span>DevTools</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="active" href="#tool">JSON</a>
+        <a href="#about">About</a>
+      </nav>
+      <button id="themeBtn" class="icon-btn" type="button" aria-label="Toggle theme" title="Toggle theme">☼</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="eyebrow"><span></span> DEVELOPER UTILITY</div>
+      <h1>JSON Formatter</h1>
+      <p>Format, validate and minify JSON instantly. Everything runs locally in your browser.</p>
+      <div class="hero-pills">
+        <span>⚡ Instant processing</span><span>🔒 Private by default</span><span>⌨ Keyboard friendly</span>
+      </div>
+    </section>
+
+    <section class="tool-card" id="tool">
+      <div class="tool-topbar">
+        <div class="tool-title">
+          <div class="tool-icon">{ }</div>
+          <div>
+            <h2>JSON Editor</h2>
+            <div class="status-row"><span class="status-dot" id="statusDot"></span><span id="status">Ready</span></div>
+          </div>
+        </div>
+        <div class="actions" role="toolbar" aria-label="JSON actions">
+          <button id="formatBtn" class="primary" type="button">Format</button>
+          <button id="minifyBtn" type="button">Minify</button>
+          <button id="validateBtn" type="button">Validate</button>
+          <span class="action-divider"></span>
+          <button id="copyBtn" type="button">Copy</button>
+          <button id="pasteBtn" type="button">Paste</button>
+          <button id="uploadBtn" type="button">Upload</button>
+          <button id="downloadBtn" type="button">Download</button>
+          <span class="action-divider"></span>
+          <button id="sampleBtn" type="button">Sample</button>
+          <button id="clearBtn" class="danger-ghost" type="button">Clear</button>
+        </div>
+      </div>
+
+      <div class="editor-shell">
+        <div class="editor-toolbar">
+          <div class="file-label"><span class="file-dot"></span><span id="fileName">untitled.json</span><span class="dirty" id="dirtyMark" hidden>●</span></div>
+          <div class="toolbar-hints"><span>2 spaces</span><span>Ctrl + Enter format</span><span>Ctrl + Shift + M minify</span></div>
+          <div class="toolbar-right">
+            <button id="searchBtn" class="mini-btn" type="button">Find</button>
+            <button id="wrapBtn" class="mini-btn active" type="button">Wrap</button>
+          </div>
+        </div>
+
+        <div class="search-bar" id="searchBar" hidden>
+          <input id="searchInput" type="search" placeholder="Find in JSON…" aria-label="Find in JSON">
+          <span id="searchCount">0 matches</span>
+          <button id="searchClose" class="mini-btn" type="button">Close</button>
+        </div>
+
+        <div class="editor-wrapper" id="dropZone">
+          <div class="editor-area">
+            <pre id="lineNumbers" aria-hidden="true">1</pre>
+            <div class="editor-layer">
+              <pre id="jsonPreview" aria-hidden="true"><code></code></pre>
+              <textarea id="jsonInput" spellcheck="false" autocapitalize="off" autocomplete="off" aria-label="JSON editor" placeholder='Paste JSON here…'></textarea>
+              <div class="drop-hint"><strong>Drop your .json file here</strong><span>It stays on your device.</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="editor-footer">
+          <div class="message" id="message" aria-live="polite"></div>
+          <div class="stats">
+            <span id="lineStat">1 line</span>
+            <span id="charStat">0 chars</span>
+            <span id="byteStat">0 B</span>
+          </div>
+        </div>
+
+        <div class="keyboard-panel">
+          <span><kbd>Ctrl</kbd><kbd>Enter</kbd> Format</span>
+          <span><kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>M</kbd> Minify</span>
+          <span><kbd>Tab</kbd> Indent</span>
+          <span><kbd>Ctrl</kbd><kbd>F</kbd> Find</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-heading">
+        <div class="section-kicker">BUILT FOR EVERYDAY JSON WORK</div>
+        <h2>Simple tools, without sending your data anywhere.</h2>
+        <p>Parse and transform JSON directly in your browser. No account, framework or server upload is required.</p>
+      </div>
+      <div class="features">
+        <article class="feature"><div class="feature-icon">⚡</div><h3>Fast</h3><p>Formatting, validation and minification happen locally for quick feedback.</p></article>
+        <article class="feature"><div class="feature-icon">⌘</div><h3>Keyboard friendly</h3><p>Use familiar shortcuts, indentation and find-in-editor controls.</p></article>
+        <article class="feature"><div class="feature-icon">↗</div><h3>Practical</h3><p>Upload, drag & drop, copy, download and inspect JSON in one focused workspace.</p></article>
+      </div>
+      <div class="privacy-note"><span>🔒</span><div><strong>Privacy by design</strong><p>JSON processing is performed in your browser. This page does not upload your editor contents to a server.</p></div></div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <input id="fileInput" type="file" accept=".json,application/json" hidden>
+
+  <footer class="footer">
+    <div class="container footer-inner"><span>© 2026 DevTools</span><span>Built with HTML · CSS · JavaScript</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
