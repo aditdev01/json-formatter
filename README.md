@@ -1,61 +1,49 @@
 # JSON Formatter
 
-A lightweight browser-based JSON utility built with HTML, CSS, and Vanilla JavaScript.
+A simple browser-based tool for working with JSON.
 
-## 🚀 Live Demo
+I built this project with HTML, CSS, and Vanilla JavaScript to make formatting and checking JSON easier without needing to install anything.
+
+## Live Demo
 
 https://json-formatter-devtools.aditdev.workers.dev/
 
-## ✨ Features
+## What it can do
 
 - Format JSON
 - Validate JSON
 - Minify JSON
 - Copy and paste JSON
 - Upload JSON files
-- Drag and drop JSON files
+- Drag and drop files
 - Download JSON
-- Search within JSON
+- Search JSON content
 - Syntax highlighting
 - Line numbers
-- Editor statistics
+- JSON statistics
 - Keyboard shortcuts
-- Dark and light themes
-- Responsive desktop and mobile layouts
-- Client-side JSON processing
+- Dark and light mode
+- Responsive layout for desktop and mobile
 
-## 🛠️ Built With
+## Built With
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 - Vanilla JavaScript
-- Browser APIs
 
-## 🔒 Privacy
+No frontend framework is used in this project.
 
-JSON processing is performed directly in the browser.
+## How it works
 
-The application does not require a backend server to process JSON data, helping keep user data local to the browser.
+The JSON is processed directly in the browser. There is no backend required for the main JSON operations.
 
-## 📱 Responsive Design
+I built it this way to keep the tool lightweight and easy to use.
 
-The interface is designed to work across desktop, laptop, tablet, and mobile screen sizes.
+## Running it locally
 
-## 🎯 Project Goals
+No packages or setup are required.
 
-This project was built as a practical developer utility with a focus on:
+Clone the repository:
 
-- Clean and responsive UI
-- Simple user experience
-- Fast client-side processing
-- Accessibility
-- Maintainable frontend code
-- Lightweight implementation without unnecessary frameworks
-
-## 📂 Project Structure
-
-```text
-json-formatter/
-├── index.html
-├── style.css
-└── script.js
+```bash
+git clone https://github.com/aditiyanugrahaa12445-crypto/json-formatter.git
