@@ -2,6 +2,8 @@
 
 A simple browser-based tool for working with JSON.
 
+![JSON Formatter Screenshot](json-formatter-screenshot.png)
+
 I built this project with HTML, CSS, and Vanilla JavaScript to make formatting and checking JSON easier without needing to install anything.
 
 ## Live Demo
