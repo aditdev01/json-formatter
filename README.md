@@ -1,31 +1,38 @@
-# JSON Formatter
+# JSON Developer Toolkit
 
-A simple browser-based tool for working with JSON.
+A lightweight browser-based JSON toolkit for formatting, validating, minifying, searching, and working with JSON.
 
-![JSON Formatter Screenshot](json-formatter-screenshot.png)
-
-I built this project with HTML, CSS, and Vanilla JavaScript to make formatting and checking JSON easier without needing to install anything.
+Built by **AditDev** using HTML, CSS, and Vanilla JavaScript.
 
 ## Live Demo
 
-https://json-formatter-devtools.aditdev.workers.dev/
+https://aditdev-json-toolkit.pages.dev/json-toolkit.html
 
-## What it can do
+## Product
+
+The complete developer toolkit is available as a digital product:
+
+https://payhip.com/b/KGea3
+
+## Features
 
 - Format JSON
 - Validate JSON
 - Minify JSON
-- Copy and paste JSON
+- Search JSON content
 - Upload JSON files
 - Drag and drop files
 - Download JSON
-- Search JSON content
+- Copy JSON
 - Syntax highlighting
 - Line numbers
 - JSON statistics
 - Keyboard shortcuts
-- Dark and light mode
-- Responsive layout for desktop and mobile
+- Responsive desktop and mobile interface
+
+## Screenshot
+
+![JSON Developer Toolkit Screenshot](json-formatter-screenshot.png)
 
 ## Built With
 
@@ -33,17 +40,22 @@ https://json-formatter-devtools.aditdev.workers.dev/
 - CSS
 - Vanilla JavaScript
 
-No frontend framework is used in this project.
+No frontend framework is required.
 
-## How it works
+## How It Works
 
-The JSON is processed directly in the browser. There is no backend required for the main JSON operations.
+JSON processing is performed directly in the browser.
 
-I built it this way to keep the tool lightweight and easy to use.
+The main toolkit does not require:
 
-## Running it locally
+- A backend server
+- A database
+- API keys
+- Package installation
 
-No packages or setup are required.
+This keeps the tool lightweight and easy to run.
+
+## Running Locally
 
 Clone the repository:
 
