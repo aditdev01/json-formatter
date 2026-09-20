@@ -60,4 +60,4 @@ This keeps the tool lightweight and easy to run.
 Clone the repository:
 
 ```bash
-git clone https://github.com/aditiyanugrahaa12445-crypto/json-formatter.git
+https://github.com/aditdev01/json-formatter.git
